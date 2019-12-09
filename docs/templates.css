@@ -1,0 +1,415 @@
+﻿page {
+    background: white;
+    width: 2105px;
+    height: 1485px;
+    display: block;
+    overflow: hidden;
+}
+body {
+    margin:0; padding:0;
+    background-color: #232323;
+}
+* {
+    font-family: 'NanumBarunGothic', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+}
+table, tr, td, th, tbody, thead, tfoot {
+    page-break-inside: avoid !important;
+}
+b {
+    font-weight: 600;
+}
+
+.doc_body{
+    box-sizing: border-box;
+    height: 1350px;
+    padding-top: 100px;
+    padding-left: 142px; padding-right: 142px;
+}
+.doc_footer{
+    height: 64px;
+    padding-left: 142px; padding-right: 142px;
+
+    font-size: 24px;
+    text-align: center;
+}
+.doc_body.doc_big_padding{
+    padding: 200px 200px 0px 200px;
+}
+.doc_footer.doc_big_padding{
+    padding: 0px 200px 0px 200px;
+}
+.footer_left{
+    width: 50%; text-align: left; float: left;
+}
+.footer_right{
+    width: 50%; text-align: right; float: right;
+}
+.doc_last_footer{
+    font-size: 26px;
+    line-height: 34px;
+}
+
+p {
+    margin: 0;
+}
+p.content{
+    margin-bottom: 6px;
+    font-size: 28px;
+}
+p.content b{
+    color: #0d9acf;
+    font-weight: 600;
+}
+
+p.p1h1{
+    padding-top: 240px;
+    font-size: 54px;
+    text-align: left;
+    letter-spacing: 0.5px;
+}
+p.p1h2{
+    margin-left: -21px;
+    font-size: 240px;
+    text-align: left;
+}
+p.p1h3{
+    margin-top: -15px;
+    font-size: 40px;
+    text-align: left;
+}
+
+h1{
+    display: inline-block;
+    padding: 5px;
+    background-color: #ededed;
+    border-bottom: solid 5px #0d9acf;
+
+    font-size: 36px;
+    text-align: left;
+    color: #000;
+    font-weight: 400;
+}
+h1.display_none{
+    width:0; height:0; marign:0; padding:0;
+    font-size:1px; color: #fff;
+}
+h2{
+    display: inline-block;
+    padding: 5px;
+    background-color: #ededed;
+    border-bottom: solid 5px #0d9acf;
+
+    font-size: 36px;
+    text-align: left;
+    color: #000;
+    font-weight: 400;
+}
+table {
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 20px
+}
+td {
+    vertical-align: middle;
+}
+
+table.score{
+    width: 1100px;
+    border: 1px solid #0d9acf;
+    border-collapse: collapse;
+    text-align: center;
+}
+table.score tbody tr:nth-child(1){
+    height: 55px;
+}
+table.score tbody tr:nth-child(2){
+    height: 55px;
+}
+table.score th{
+    background-color: #0d9acf;
+    color: #fff;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+table.score tr:nth-child(1) th{
+    padding-top: 7px;
+}
+table.score tr:nth-child(2) th{
+    padding-bottom: 7px;
+}
+table.score tr{
+    height: 64px;
+}
+table.score tbody tr:nth-child(odd) td {
+    background-color: #f5f5f5;
+}
+table.score th, td{
+    border: 0;
+}
+
+
+.snu table.nb{
+    width: 600px;
+    border: 1px solid #eee;
+}
+.snu table.nb th{
+    width: 200px;
+    height: 52px;
+    background-color: #fff;
+    border-bottom: 1px solid #8fd3ed;
+
+    color: #000;
+    font-style: italic;
+    text-align: center;
+    padding-right: 10px;
+}
+.snu table.nb th:nth-child(1){
+    text-align: right;
+}
+.snu table.nb tbody tr td{
+    height: 52px;
+    border: 0;
+}
+.snu table.nb tbody tr:nth-child(odd) td {
+    background-color: #e8f9ff;
+}
+.snu table.nb tbody tr td:nth-child(1) {
+    background-color: #fff;
+    border: 0;
+    border-right: 1px solid #8fd3ed;
+
+    text-align: right;
+    padding-right: 10px;
+}
+.snu table.nb tbody tr:nth-child(6) td {
+    background-color: #0d9acf;
+    color: #fff;
+    font-weight: 400;
+}
+
+.snu table.ptable{
+    width: 100%;
+    border: 1px solid #eee !important;
+}
+.snu table.ptable th{
+    height: 56px;
+    background-color: #0d9acf;
+    color: #fff;
+    font-weight: 300;
+}
+.snu table.ptable tbody tr td {
+    height: 100px;
+    border: 0;
+}
+.snu table.ptable tbody tr:nth-child(odd) td {
+    background-color: #e6e6e6;
+}
+.snu table.ptable th:nth-child(1){
+    padding-left: 15px;
+}
+.snu table.ptable td:nth-child(1){
+    padding-left: 10px;
+    word-break: keep-all;
+}
+.snu table.ptable tbody tr td:nth-child(2) {
+    width: 300px;
+    text-align: left;
+    padding-right: 10px;
+}
+
+.snu table.ptable th:nth-child(2) .snu table.ptable tbody tr td:nth-child(2) {
+    width: 140px;
+}
+
+.snu table.ptable th.p_signal{
+    width: 50px;
+}
+.snu table.ptable tbody tr:nth-child(odd) td.p_signal:nth-child(1){
+    border-right: 0;
+    width: 50px;
+}
+.snu table.ptable tbody tr:nth-child(even) td.p_signal:nth-child(1){
+    border-right: 0;
+    width: 50px;
+}
+
+span.p_red, span.p_yellow, span.p_green, span.p_light_green{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: inline-block;
+}
+span.p_red{
+    background-color: #a33842 !important;
+}
+span.p_yellow{
+    background-color: #ffd200 !important;
+}
+span.p_green{
+    background-color: #008554 !important;
+}
+span.p_light_green{
+    background-color: #44d7a1 !important;
+}
+
+.snu table.ptable th.p_info, td.p_info{
+    width: 85px;
+}
+.snu table.ptable th.p_mine, td.p_mine{
+    width: 140px;
+}
+
+.snu table.ptable th.p_bar, td.p_bar{
+    width: 1020px;
+}
+.snu table.ptable td.p_bar{
+    padding-left: 15px;
+    padding-right: 15px;
+    border-right: 1px solid #eee;
+}
+
+div.p_score_area{
+    position: relative;
+    width: 100%;
+    height: 40px;
+}
+div.p_score_desc{
+    position: absolute;
+    font-size: 18px;
+    padding-top: 12px;
+    float: left;
+}
+
+div.p_bar_area{
+    position: relative;
+    height: 35px;
+}
+div.p_red, div.p_yellow, div.p_light_green, div.p_green{
+    height: 30px !important;
+    float:left;
+}
+div.p_red{
+    background-color: #a33842 !important;
+}
+div.p_yellow{
+    background-color: #ffd200 !important;
+}
+div.p_green{
+    background-color: #008554 !important;
+}
+div.p_light_green{
+    background-color: #44d7a1 !important;
+}
+div.p_score_cur{
+    position: absolute;
+    margin-top: 35px;
+    width: 5px;
+    height: 100%;
+    background-color: #0d9acf;
+    z-index: 123456;
+}
+
+div.p_pos_area{
+    position: relative;
+    height: 25px;
+}
+p.p_pos_score{
+    position: absolute;
+    font-size: 18px;
+}
+span.p_pos {
+    display: inline-block;
+    margin-top: -5px;
+    width: 0; height: 0; border-style: solid; border-width: 10px; font-size: 0px!important;
+    border-color:transparent transparent #0d9acf transparent;
+}
+
+
+.snu table.ptable tbody tr:nth-child(odd) td.p_mine{
+    background-color: #afe0f3;
+}
+
+.snu table.ptable tbody tr:nth-child(even) td.p_mine{
+    background-color: #e3f8ff;
+}
+.snu table.ptable tbody td.p_mine2{
+    background-color: #c9f2ff!important;
+}
+
+/** 변환점수 열
+.snu table.ptable tbody tr:nth-child(even) td:nth-child(5){
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+**/
+
+
+.snu table.nb_union{
+    width: 100%;
+    border: 1px solid #eee;
+}
+.snu table.nb_union th{
+    height: 52px;
+    background-color: #fff;
+    border-bottom: 1px solid #8fd3ed;
+
+    color: #000;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 24px;
+    text-align: center;
+    padding-right: 10px;
+}
+.snu table.nb_union tbody tr td{
+    height: 52px;
+    border: 0;
+}
+.snu table.nb_union tbody tr:nth-child(odd) td {
+    background-color: #e8f9ff;
+}
+
+.snu table.nb_union th:nth-child(1){
+    width: 180px;
+    text-align: right;
+}
+.snu table.nb_union th:nth-child(5){
+    width: 180px;
+    text-align: right;
+    border-left: 3px dotted #8fd3ed;
+}
+.snu table.nb_union th:nth-child(9){
+    width: 180px;
+    text-align: right;
+    border-left: 3px dotted #8fd3ed;
+}
+
+.snu table.nb_union tbody tr td:nth-child(1) {
+    width: 180px;
+    background-color: #fff;
+    border: 0;
+    border-right: 1px solid #8fd3ed;
+
+    text-align: right;
+    padding-right: 10px;
+}
+.snu table.nb_union tbody tr td:nth-child(5) {
+    width: 180px;
+    background-color: #fff;
+    border-left: 3px dotted #8fd3ed;
+    border-right: 1px solid #8fd3ed;
+
+    text-align: right;
+    padding-right: 10px;
+}
+.snu table.nb_union tbody tr td:nth-child(9) {
+    width: 180px;
+    background-color: #fff;
+    border-left: 3px dotted #8fd3ed;
+    border-right: 1px solid #8fd3ed;
+
+    text-align: right;
+    padding-right: 10px;
+}
